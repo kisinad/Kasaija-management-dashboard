@@ -1,94 +1,68 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html class="supernova"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE HTML>
+<head>
+<meta charset="utf-8">
 <title>Property Registration Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<form class="registrationform-form" action="https://submit.registrationform-form/submit/" method="post" name="form" id="" accept-charset="utf-8">
-  <input type="hidden" name="formID" value="" />
-  <div role="main" class="form-all">
-    <br><br>
-        <div class="form-header-group ">
-          <div class="header-text httal htvam">
-            <h1 id="header_10" class="form-header" data-component="header">
-              Register Your Poperty
-            </h1>
-            <div id="subHeader_10" class="form-subHeader">
-              Please provide all required details to register your property with us
+  <div class ="container">
+    <div class= "row col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h1>Register Your Poperty Here </h1>
+        </div>
+        <div class=" panel-body">
+          Please provide all required details to register your property with us.
+          <form>
+            <div class="form-group">
+              <label for ="propertyOwner"> Property Owner:</label>
+              <input type="text" class="form-control" id= "propertyOwner"/>
             </div>
-          </div>
-        </div>
-       <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_4" for="first_4">
-          Property Owner
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_4" class="form-input-wide reg-required">
-          <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" id="first_4" name="q4_businessOwner[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_4 sublabel_4_first" required=""/>
-              <label class="form-sub-label" for="first_4" id="sublabel_4_first" style="min-height:13px"> First Name </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" id="last_4" name="q4_businessOwner[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_4 sublabel_4_last" required=""/>
-              <label class="form-sub-label" for="last_4" id="sublabel_4_last" style="min-height:13px"> Last Name </label>
-            </span>
-          </div>
-        </div>
-      <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6">
-          Property Name  
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_6" class="form-input-wide reg-required">
-          <input type="text" id="input_6" name="q6_businessName" data-type="input-textbox" class="form-textbox validate[required]" size="30" value="" placeholder=" " data-component="textbox" aria-labelledby="label_6" required="" />
-        </div>
-      <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6">
-          Location 
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_6" class="form-input-wide reg-required">
-          <input type="text" id="input_6" name="q6_businessName" data-type="input-textbox" class="form-textbox validate[required]" size="30" value="" placeholder=" " data-component="textbox" aria-labelledby="label_6" required="" />
+           <div class="form-group">
+              <label for ="firstName"> First Name:</label>
+              <input type="text" class="form-control" id= "firstName"/>
+            </div>
+            <div class="form-group">
+              <label for ="lastName"> Last Name:</label>
+              <input type="text" class="form-control" id= "lastName"/>
+            </div>
+            <div class="form-group">
+              <label for ="PropertyName"> Property Name:</label>
+              <input type="text" class="form-control" id= "PropertyName"/>
+            </div>
+            <div class="form-group">
+              <label for ="Location"> Location:</label>
+              <input type="text" class="form-control" id= "Location"/>
+            </div>
+            <div class="form-group">
+              <label for ="Telephone"> Telephone Number:</label>
+              <input type="text" class="form-control" id= "Telephone"/>
+            </div>
+            <div class="form-group">
+              <label for ="email"> Email:</label>
+              <input type="text" class="form-control" id= "email"/>
+            </div>
+            <div class="form-group">
+              <label for ="address"> Address:</label>
+              <input type="text" class="form-control" id= "address"/>
+            </div>
+            <div class="form-group">
+              <label for ="typeOfproperty"> Type of Property:</label>
+            <div id="cid_11" class="form-input-wide reg-required">
+          <select class="form-dropdown validate[required]" id="input_11" name="q11_typeOf" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_11">
+            <option value="">  </option>
+            <option value="Commercial">Commercial</option>
+            <option value="Residential"> Residential </option>
+            <option value="Others, please specify below."> Others, please specify below. </option>
+          </select>
         </div>
       <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_12" for="input_12_area">
-          Telephone Number
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_12" class="form-input-wide reg-required">
-          <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="tel" id="input_12_phone" name="q12_contactNumber[phone]" class="form-textbox validate[required]" size="18" value="" data-component="phone" aria-labelledby="label_12 sublabel_12_phone" required="" />
-              <label class="form-sub-label" for="input_12_phone" id="sublabel_12_phone" style="min-height:13px">
-               </label>
-            </span>
-          </div>
-        </div>
-      <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5">
-          E-mail
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_5" class="form-input-wide reg-required">
-          <input type="email" id="input_5" name="q5_email" class="form-textbox validate[required, Email]" size="22" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_5" required="" />
-        </div>
-      <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_3" for="input_3undefined">
-          Address
-          <span class="form-required">
-            *
+        <label class="form-label form-label-top form-label-auto" id="label_13" for="input_13">
+      Size of property in square meters
+          <span class="form-required">*
           </span>
         </label>
         <div id="cid_3" class="form-input-wide reg-required">
@@ -98,7 +72,9 @@
                 <td colSpan="2">
                   <span class="form-sub-label-container" style="vertical-align:top">
                     <input type="text" id="input_3_addr_line1" name="q3_address3[addr_line1]" class="form-textbox validate[required] form-address-line" value="" data-component="address_line_1" aria-labelledby="label_3 sublabel_3_addr_line1" required="" />
-                    <label class="form-sub-label" for="input_3_addr_line1" id="sublabel_3_addr_line1" style="min-height:13px"> Street Address </label>
+                    <div class="form-group">
+              <label for ="streetAddress"> Street Address:</label>
+              <input type="text" class="form-control" id= "firstName"/>
                   </span>
                 </td>
               </tr>
@@ -120,40 +96,16 @@
                   </span>
                 </td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-      <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_11" for="input_11">
-          Type of Property
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_11" class="form-input-wide reg-required">
-          <select class="form-dropdown validate[required]" id="input_11" name="q11_typeOf" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_11">
-            <option value="">  </option>
-            <option value="Commercial">Commercial</option>
-            <option value="Residential"> Residential </option>
-            <option value="Others, please specify below."> Others, please specify below. </option>
-          </select>
-        </div>
-      <br><br>
-        <label class="form-label form-label-top form-label-auto" id="label_13" for="input_13">
-      Size of property in square meters
-          <span class="form-required">*
-          </span>
-        </label>
-        <div id="cid_13" class="form-input-wide reg-required">
-          <input type="number" id="input_13" number="q13_others" data-type="input-textbox" class="form-textbox validate[required]" size="20" number="" placeholder=" " data-component="textbox" aria-labelledby="label_13" required="" />
-        </div>
-        <br>
-        <div id="cid_2" class="form-input-wide">
-          <div style="margin-left:156px" class="form-buttons-wrapper">
-            <button id="input_2" type="submit" class="form-submit-button" data-component="button">
-              Submit Registration
-            </button>
+            </div></span></td></tr></tbody></table></div></div>
+         <input type="submit" class="btn btn-primary">
+       </form>
           </div>
+        <div class="panel-footer text-center">
+          <small>&copy; KMD DD</small>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
-</form></body>
+</body>
 </html>
