@@ -14,7 +14,7 @@ a {
 div#header{
 	width: 100%;
 	height: 50px;
-	background-color: #5325E0;
+	background-color: #648ca6;
 	margin: 0 auto;
 }
 .logo {
@@ -59,7 +59,7 @@ ul#nav li a {
 	border-bottom: 1px solid #B2CBD4;
 }
 ul#nav li a:hover {
-	background-color: #006600;
+	background-color: #72c4e1;
 	color: #fff;
 }
 ul#nav li a.selected{
@@ -80,4 +80,22 @@ div#box .box-top {
 div#box .box-panel{
 	padding: 15px;
 	background-color: #fff;
+}
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
+  text-align: center;
+
+}
+.grid-container {
+	padding: 10px;
+	display: block;
+  
+  /*grid-template-columns: 240px 1fr;*/
+  /*grid-template-rows: 50px 1fr 50px;*/
+/*  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;*/
 }
