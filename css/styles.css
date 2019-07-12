@@ -39,6 +39,7 @@ div#header{
 div#container {
 	width: 100%;
 	margin: 0 auto; 
+	height: 100%;
 }
 .sidebar {
 	width: 250px;
@@ -49,7 +50,7 @@ div#container {
 .content {
 	width: auto;
 	margin-left: 250px;
-	height: 100%;
+	/*height: 100%;*/
 	background-color: #c3c3c3;
 	padding: 15px;
 	padding-left: 15px;
@@ -122,10 +123,12 @@ div#box .box-panel{
     justify-content: space-between;
     margin: 20px;
     padding: 20px;
-    height: 150px; /* Force our height since we don't have actual content yet */
+    /*height: 150px;*/ /* Force our height since we don't have actual content yet */
     background-color: #e3e4e6;
-    color: slategray;}
-     .main-overview {
+    color: slategray;
+}
+    
+    .main-overview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(265px, 1fr)); /* Where the magic happens */
     grid-auto-rows: 94px;

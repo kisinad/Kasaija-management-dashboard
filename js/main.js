@@ -9,7 +9,13 @@ $(document).ready(function(){
    
   });
 
-
+  $("#tentReg").click(function(e){
+   	 e.preventDefault();
+   	 // let titles = $(".form-header").html()
+   	 // $(".content h1").html(titles)
+    $(".content").load("tenant_registration.html"); 
+   
+  });
 // $('#menubar').attr('href').click(function(e){
 //             e.preventDefault();
 //             $('#userpersonal').load("http://localhost/user/web/personal/index");
