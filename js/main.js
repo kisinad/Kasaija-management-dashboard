@@ -5,7 +5,7 @@ $(document).ready(function(){
    	 e.preventDefault();
    	 // let titles = $(".form-header").html()
    	 // $(".content h1").html(titles)
-    $(".content").load("registration_form.html"); 
+    $(".content").load("property_registration_form.html"); 
    
   });
 

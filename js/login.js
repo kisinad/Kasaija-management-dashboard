@@ -1,5 +1,5 @@
 $(document).ready(function(){
-var obj = [
+let obj = [
 {
 	userEmail:"admin@kmd.com",
 	passWord: "admin"
