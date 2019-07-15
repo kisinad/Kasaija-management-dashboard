@@ -5,7 +5,7 @@ $(document).ready(function(){
    	 e.preventDefault();
    	 // let titles = $(".form-header").html()
    	 // $(".content h1").html(titles)
-    $(".content").load("property_registration_form.html"); 
+    $(".content").load("registration_form.html"); 
    
   });
 
@@ -14,6 +14,20 @@ $(document).ready(function(){
    	 // let titles = $(".form-header").html()
    	 // $(".content h1").html(titles)
     $(".content").load("tenant_registration.html"); 
+   
+  });
+    $("#tentlist").click(function(e){
+   	 e.preventDefault();
+   	 // let titles = $(".form-header").html()
+   	 // $(".content h1").html(titles)
+    $(".content").load("tenant_list.html"); 
+   
+  });
+    $("#tenantPayment").click(function(e){
+     e.preventDefault();
+     // let titles = $(".form-header").html()
+     // $(".content h1").html(titles)
+    $(".content").load("payment.html"); 
    
   });
 // $('#menubar').attr('href').click(function(e){
