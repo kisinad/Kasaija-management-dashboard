@@ -1,3 +1,3 @@
 # Kasaija-management-dashboard
 
-![Kasaija Management System](/home/chabo/Pictures/KMD.png)
+![Kasaija Management System](imgs/KMD.png)
