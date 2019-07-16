@@ -14,7 +14,7 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: grey;
+    color: black;
 }
 div#header{
 	width: 100%;
@@ -59,6 +59,7 @@ div#container {
 	background-color: #c3c3c3;
 	padding: 15px;
 	padding-left: 15px;
+
 }
 
 ul#nav {
@@ -126,8 +127,8 @@ div#box .box-panel{
   .main-header {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    padding: 20px;
+    margin: 0px;
+    padding: 5px;
     /*height: 150px;*/ /* Force our height since we don't have actual content yet */
     background-color: #e3e4e6;
     color: slategray;
@@ -145,13 +146,24 @@ div#box .box-panel{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 16px;
     background-color: #cb0758e3;
     color: white;
     font-weight: 500;
-    width: 103%;
-  }
+    width: 341px;
+    word-break: break-all;
+}
   .welcome{
-  	color: #0018cf;
+  	color: #fefefe;;
     font-weight: 900;
   }
+
+  #search_section {
+  padding: 5px;
+  font-family: 'Avenir LT Std', sans-serif;
+}
+
+.form-control {
+  font-size: 1rem;
+  padding: 5px 5px;
+}

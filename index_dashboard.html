@@ -1,85 +1,143 @@
-
 <!-- <!DOCTYPE html> -->
 <html>
-<head>
-	<title>Kasaija Management Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/login.js"></script>
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-</head>
-<body>
-	<div class="grid-container">
-		<div class="bg-primary" id="header">
-			<div class="logo ">
-				<a href="#">Kasaija Management Dashboard</a>
-			</div>
-			<div class="signout">
-				<a href="sign_in.html">Sign Out</a>
-			</div>
-		</div>
-		<div id="container">
-		<div class="sidebar">
-			<ul id="nav">
-				<li><a href="index_dashboard.html">DashBoard</a></li>
-				<li><a href="#" id="reg"> Property Registration</a></li>
-				<li><a href="#" id="tentReg">Tenant Registration</a></li>
-				<li><a href="#" id="tentlist">Tenant List</a></li>
-				<li><a href="#">Tenant Details</a></li>
-				<li><a href="#" id="tenantPayment">Tenant Payments</a></li>
-				<li><a href="#">New Payment</a></li>
-				<li><a href="#">Tenant Payment Calendar</a></li>
-
-			</ul>
-		</div>
-		<div class="content">
-			<h1>Dashboard</h1>
-			<div class="main-header">
-			  <div class="main-header__heading">Hello <span class="welcome">User</span></div>
-			  <div class="search_section">Search</div>
-			</div>
-						<!-- <div id="box">
+    <head>
+        <title>
+            Kasaija Management Dashboard
+        </title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/login.js" type="text/javascript"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="bg-primary" id="header">
+                <div class="logo ">
+                    <!-- <a href="index_dashboard.html">
+                        Kasaija Management Dashboard
+                    </a> -->
+                     <div class="main-header__heading">
+                            <span style="color: white;">Welcome</span>
+                            <span class="welcome">
+                                User
+                            </span>
+                        </div>
+                </div>
+                <div class="signout">
+                    <a href="sign_in.html">
+                        Sign Out
+                    </a>
+                </div>
+            </div>
+            <div id="container">
+                <div class="sidebar">
+                    <ul id="nav">
+                        <li>
+                            <a href="index_dashboard.html">
+                                <i class="fas fa-house-damage"></i> DashBoard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="reg">
+                                Property Registration
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="tentReg">
+                                Tenant Registration
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="tentlist">
+                                Tenant List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Tenant Details
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="tenantPayment">
+                                Tenant Payments
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                New Payment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Tenant Payment Calendar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                   <!--  <h1>
+                        Dashboard
+                    </h1> -->
+                    <div class="main-header">
+                        <div class="main-header__heading">
+                        	<h1>
+                        		Overview
+                    		</h1>	
+                            <!-- Hello
+                            <span class="welcome">
+                                User
+                            </span> -->
+                        </div>
+                        <div id="search_section">
+                            Search
+                        </div>
+                    </div>
+                    <!-- <div id="box">
 				<div class="box-top"></div>
 				<div class="box-panel"></div>
 			</div> -->
-			<div class="main-overview">
-				
-		  <div class="overviewcard">
-		  	<div id="test"></div>
-		    <!-- <div id="week"></div>
+                    <div class="main-overview">
+                        <div class="overviewcard">
+                            <div id="test">
+                            </div>
+                            <!-- <div id="week"></div>
 		    <div class="overviewcard__info">Card</div> -->
-		  </div>
-		  <div class="overviewcard">
-		  	<div id="test1"></div>
-		   <!--  <div class="overviewcard__icon">Overview</div>
+                        </div>
+                        <div class="overviewcard">
+                            <div id="test1">
+                            </div>
+                            <!--  <div class="overviewcard__icon">Overview</div>
 		    <div class="overviewcard__info">Card</div> -->
-		  </div>
-		  <div class="overviewcard">
-		  	<div id="test2"></div>
-		   <!--  <div class="overviewcard__icon">Overview</div>
+                        </div>
+                        <div class="overviewcard">
+                            <div id="test2">
+                            </div>
+                            <!--  <div class="overviewcard__icon">Overview</div>
 		    <div class="overviewcard__info">Card</div> -->
-		  </div>
-		  <div class="overviewcard">
-		  	<div id="test3"></div>
-		  <!--   <div class="overviewcard__icon">Overview</div>
+                        </div>
+                        <div class="overviewcard">
+                            <div id="test3">
+                            </div>
+                            <!--   <div class="overviewcard__icon">Overview</div>
 		    <div class="overviewcard__info">Card</div> -->
-		  </div>
-		</div>
-		<div id="like_button_container"></div>
-		</div>
-		
-		</div>
-		<footer class="footer"> Kasaija Management Dashboard &copy; 2019</footer>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-	 	<script type="text/babel" src="js/dash_board.js">		
-	 	</script>
-	 	<script type="text/babel" src="js/calender.js">
-	 		
-	 		
-	 	</script>
-</body>
+                        </div>
+                    </div>
+                    <div id="like_button_container">
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                Kasaija Management Dashboard © 2019
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+        <script src="js/dash_board.js" type="text/babel"></script>
+        <script src="js/calender.js" type="text/babel"></script>
+        <script src="js/search.js" type="text/babel"></script>
+        <script src="js/todo.js" type="text/babel"></script>
+    </body>
 </html>
