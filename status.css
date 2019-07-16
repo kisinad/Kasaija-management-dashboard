@@ -1,3 +1,22 @@
+*
+{
+    border: 0;
+    box-sizing: content-box;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+/* content editable */
+
 *[contenteditable] { border-radius: 0.25em; min-width: 1em; outline: 0; }
 
 *[contenteditable] { cursor: pointer; }
@@ -115,40 +134,12 @@ aside h1 { border-color: #999; border-bottom-style: solid; }
 
 tr:hover .cut { opacity: 1; }
 
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
+@media print {
+    * { -webkit-print-color-adjust: exact; }
+    html { background: none; padding: 0; }
+    body { box-shadow: none; margin: 0; }
+    span:empty { display: none; }
+    .add, .cut { display: none; }
 }
 
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
+@page { margin: 0; }
