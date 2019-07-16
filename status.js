@@ -20,9 +20,6 @@
 	return head.insertBefore(element.lastChild, head.firstChild);
 })(document);
 
-/* Prototyping
-/* ========================================================================== */
-
 (function (window, ElementPrototype, ArrayPrototype, polyfill) {
 	function NodeList() { [polyfill] }
 	NodeList.prototype.length = ArrayPrototype.length;
@@ -59,9 +56,6 @@
 	};
 })(this, Element.prototype, Array.prototype);
 
-/* Helper Functions
-/* ========================================================================== */
-
 function generateTableRow() {
 	var emptyColumn = document.createElement('tr');
 
@@ -82,9 +76,6 @@ function parsePrice(number) {
 	return number.toFixed(2).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1,');
 }
 
-/* Update Number
-/* ========================================================================== */
-
 function updateNumber(e) {
 	var
 	activeElement = document.activeElement,
@@ -103,56 +94,38 @@ function updateNumber(e) {
 	updateInvoice();
 }
 
-/* Update Invoice
-/* ========================================================================== */
 
 function updateInvoice() {
 	var total = 0;
 	var cells, price, total, a, i;
 
-	// update inventory cells
-	// ======================
-
+	
 	for (var a = document.querySelectorAll('table.inventory tbody tr'), i = 0; a[i]; ++i) {
-		// get inventory row cells
+		
 		cells = a[i].querySelectorAll('span:last-child');
 
-		// set price as cell[2] * cell[3]
 		price = parseFloatHTML(cells[2]) * parseFloatHTML(cells[3]);
 
-		// add price to total
+		
 		total += price;
 
-		// set row total
-		cells[4].innerHTML = price;
+	
+		// cells[4].innerHTML = price;
 	}
 
-	// update balance cells
-	// ====================
-
-	// get balance cells
 	cells = document.querySelectorAll('table.balance td:last-child span:last-child');
 
-	// set total
 	cells[0].innerHTML = total;
 
-	// set balance and meta balance
 	cells[2].innerHTML = document.querySelector('table.meta tr:last-child td:last-child span:last-child').innerHTML = parsePrice(total - parseFloatHTML(cells[1]));
-
-	// update prefix formatting
-	// ========================
 
 	var prefix = document.querySelector('#prefix').innerHTML;
 	for (a = document.querySelectorAll('[data-prefix]'), i = 0; a[i]; ++i) a[i].innerHTML = prefix;
 
-	// update price formatting
-	// =======================
-
+	
 	for (a = document.querySelectorAll('span[data-prefix] + span'), i = 0; a[i]; ++i) if (document.activeElement != a[i]) a[i].innerHTML = parsePrice(parseFloatHTML(a[i]));
 }
 
-/* On Content Load
-/* ========================================================================== */
 
 function onContentLoad() {
 	updateInvoice();
