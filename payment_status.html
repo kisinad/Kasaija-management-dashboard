@@ -4,19 +4,18 @@
         <meta charset="utf-8">
         <title>Invoice</title>
         <link rel="stylesheet" href="status.css">
-        <script src="status.js.js"></script>
+        <script src="status.js"></script>
     </head>
     <body>
-    	<div class ="container">
+  <div class ="container">
     <div class= "row col-md-6 col-md-offset-3">
       <div class="panel panel-primary">
         <div class="panel-heading text-center">
-        <header>
-            <h1>Invoice</h1>
+            <h1><hr>Invoice</h1></h1>
             <address contenteditable>
                 <p>Kasaija Management Dashboard</p>
                 <p>Soliz Hse Lumumba Avenue<br> P.O.Box</p>
-                <p>(Kla</p>
+                <p>Kampala</p>
             </address>
         </header>
         <article>
@@ -27,34 +26,36 @@
             <table class="meta">
                 <tr>
                     <th><span contenteditable>Invoice #</span></th>
-                    <td><span contenteditable>101138</span></td>
+                    <td><span contenteditable>#</span></td>
                 </tr>
                 <tr>
                     <th><span contenteditable>Date</span></th>
-                    <td><span contenteditable>August 8, 2019</span></td>
+                    <td><span contenteditable>July 15, 2019</span></td>
                 </tr>
                 <tr>
                     <th><span contenteditable>Amount Due</span></th>
-                    <td><span id="prefix" contenteditable>Ugx</span><span>600.00</span></td>
+                    <td><span id="prefix" contenteditable></span><span>600.000</span></td>
                 </tr>
             </table>
             <table class="inventory">
                 <thead>
                     <tr>
-                        <th><span contenteditable>Item</span></th>
+                        <th><span contenteditable>Tenant</span></th>
                         <th><span contenteditable>Description</span></th>
-                        <th><span contenteditable>Rate</span></th>
-                        <th><span contenteditable>Quantity</span></th>
-                        <th><span contenteditable>Price</span></th>
+                        <th><span contenteditable>Amount Paid</span></th>
+                        <th><span contenteditable>Period in Months</span></th>
+                        <th><span contenteditable>Comment</span></th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a class="cut">-</a><span contenteditable>Front End Consultation</span></td>
-                        <td><span contenteditable>Experience Review</span></td>
-                        <td><span data-prefix>Ugx</span><span contenteditable>150.00</span></td>
-                        <td><span contenteditable>4</span></td>
-                        <td><span data-prefix>Ugx</span><span>600.00</span></td>
+                        <td><a class="cut">-</a><span contenteditable>Outbox</span></td>
+                        <td><span contenteditable>Rent</span></td>
+                         <td><span data-prefix></span><span>300.000</span></td>
+                        <td><span data-prefix></span><span contenteditable>1</span></td>
+                        <td><span contenteditable>......</span></td>
+                       
                     </tr>
                 </tbody>
             </table>
@@ -62,23 +63,119 @@
             <table class="balance">
                 <tr>
                     <th><span contenteditable>Total</span></th>
-                    <td><span data-prefix>Ugx</span><span>600.00</span></td>
+                    <td><span data-prefix>Ugx</span><span>600.000</span></td>
                 </tr>
                 <tr>
                     <th><span contenteditable>Amount Paid</span></th>
-                    <td><span data-prefix>Ugx</span><span contenteditable>0.00</span></td>
+                    <td><span data-prefix>Ugx</span><span contenteditable>300.000</span></td>
                 </tr>
                 <tr>
                     <th><span contenteditable>Balance Due</span></th>
-                    <td><span data-prefix>Ugx</span><span>600.00</span></td>
+                    <td><span data-prefix>Ugx</span><span>300.000</span></td>
                 </tr>
             </table>
         </article>
         <aside>
             <h1><span contenteditable>Additional Notes</span></h1>
             <div contenteditable>
-                <p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+                <p>Click Below to check status of your payents.</p><br>
             </div>
         </aside>
+        <style>
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all Payments</button>
+  <button class="btn" onclick="filterSelection('finished')"> Finished </button>
+  <button class="btn" onclick="filterSelection('pending')">Pending </button>
+</div>
+
+<div class="container">
+  <div class="filterDiv finished">Dello</div>
+  <div class="filterDiv pending">Denis</div>
+  <div class="filterDiv finished">Roland</div>
+  <div class="filterDiv pending">Redson</div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
     </body>
 </html>
