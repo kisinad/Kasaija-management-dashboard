@@ -53,9 +53,9 @@ div#container {
 	background-color: #1E1926;
 }
 .content {
-	width: 150px;
-	margin-left: 150px;
-	height: 150%;
+	width: auto;
+	margin-left: 250px;
+	/*height: 100%;*/
 	background-color: #c3c3c3;
 	padding: 15px;
 	padding-left: 15px;
@@ -99,7 +99,9 @@ div#box .box-panel{
 	background-color: #fff;
 }
 .footer {
-
+ /* grid-area: footer;
+  background-color: #648ca6;
+  text-align: center;*/
   background-color: #337ab7;
   color: white;
   text-align: center;
@@ -112,7 +114,14 @@ div#box .box-panel{
 .grid-container {
 	padding: 10px;
 	display: block;
-
+  
+  /*grid-template-columns: 240px 1fr;*/
+  /*grid-template-rows: 50px 1fr 50px;*/
+/*  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;*/
 }
 
   .main-header {
@@ -141,9 +150,8 @@ div#box .box-panel{
     background-color: #cb0758e3;
     color: white;
     font-weight: 500;
-    width: 308px;
+    width: 341px;
     word-break: break-all;
-    font-size: 12px;l;
 }
   .welcome{
   	color: #fefefe;;
