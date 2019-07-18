@@ -1,4 +1,4 @@
-# Kasaija Management Dashboard
+# Kasaija Property Management Dashboard
 
 Author
 =======
@@ -15,5 +15,13 @@ Kasaija Management syste is designed for residential or commercial property mana
 1. Billing and Payments
 2. Tenant Registration
 3. Property Registaration
+4. Database to store property details
+5. User Registration
+
+## Technologies Used
+⋅⋅* HTML&CSS
+⋅⋅* Bootstrap
+⋅⋅* JavaScript & Jquery
+⋅⋅* React
 
 ![Kasaija Management System](imgs/KMD.png)
