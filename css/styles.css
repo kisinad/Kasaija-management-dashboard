@@ -150,8 +150,9 @@ div#box .box-panel{
     background-color: #cb0758e3;
     color: white;
     font-weight: 500;
-    width: 341px;
+    width: 315px;
     word-break: break-all;
+    font-size: 10px;
 }
   .welcome{
   	color: #fefefe;;
