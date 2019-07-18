@@ -23,5 +23,9 @@ Kasaija Management syste is designed for residential or commercial property mana
 ⋅⋅* Bootstrap
 ⋅⋅* JavaScript & Jquery
 ⋅⋅* React
+## Login Details
+
+user email: admin@kmd.com
+password: admin
 
 ![Kasaija Management System](imgs/KMD.png)
